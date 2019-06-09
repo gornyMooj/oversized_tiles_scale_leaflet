@@ -7,6 +7,6 @@
 
 Where:
     
-minZoom Number:  Minimum zoom number.
-maxZoom Number:  Maximum zoom number.
+minZoom Number:  Minimum zoom number.<br />
+maxZoom Number:  Maximum zoom number.<br />
 maxNativeZoom:   Maximum zoom number the tiles source has available. If it is specified, the tiles on all zoom levels higher than maxNativeZoom will be loaded from maxZoom level and auto-scaled.
