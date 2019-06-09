@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Leaflet Polyline 2 Basic</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+
+<style>
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+    
+</style>
+<body>
+
+<div id="map"></div>
+
+
+<script>
+    var map = L.map('map').setView([53.472648, 19.94544], 22);
+    var elgnowo_test_tiles = L.tileLayer('https://tile-maps.s3-eu-west-1.amazonaws.com/hd_first_elgnowo/{z}/{x}/{y}.png', {
+	    attribution: 'Rights: Lukasz Gorny',
+        maxNativeZoom: 22,
+        maxZoom:22
+    });
+
+     elgnowo_test_tiles.addTo(map);
+
+    
+</script>
+</body>
+</html>
